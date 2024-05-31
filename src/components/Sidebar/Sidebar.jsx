@@ -7,7 +7,7 @@ import { IoTimerOutline } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
 
 function Sidebar() {
-  const [extended, setExtended] = useState(false);
+  const [extended, setExtended] = useState(true);
 
   const handleClick = () => {
     setExtended(prev => !prev)
