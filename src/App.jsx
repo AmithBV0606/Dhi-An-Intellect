@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className='flex'>
+      <div className="flex animate-fadeIn">
         <Sidebar />
         <Main />
       </div>
