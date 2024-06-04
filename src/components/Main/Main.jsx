@@ -9,6 +9,7 @@ import { FaMicrophone } from "react-icons/fa";
 import { VscSend } from "react-icons/vsc";
 import { Context } from "../../context/Context";
 import { FaRegUserCircle } from "react-icons/fa";
+import { assets } from "../../assets/assets";
 
 function Main() {
   const {
@@ -24,10 +25,10 @@ function Main() {
 
   return (
     <div className="main flex-1 min-h-[100vh] relative">
-      <div className="nav flex items-center justify-between text-2xl p-5 text-[#585858]">
+      <div className="nav flex items-center justify-between text-2xl py-2 px-5 text-[#585858]">
         <p>Dhi-An Intellect</p>
         <img
-          src="public/dhi-high-resolution-logo-transparent.png"
+          src={assets.Main_logo}
           alt="MainLogo"
           height={150}
           width={150}
@@ -76,14 +77,14 @@ function Main() {
               </div>
             </div>
         </>
-        :<div className="result py-0 px-[5%] max-h-[70vh] overflow-y-scroll">
+        :<div className="result py-0 px-[5%] max-h-[65vh] overflow-y-scroll">
             <div className="result-title my-10 mx-0 flex items-center gap-5">
                 <FaRegUserCircle className="w-7 h-7"/>
                 <p>{recentPrompt}</p>
             </div>
 
             <div className="result-data flex items-start gap-5">
-                <img src='public/Logo2.png' alt="Logo" width={30}/>
+                <img src={assets.Sub_logo} alt="Logo" width={30}/>
                 {loading
                 ?<div className="loader w-[100%] flex flex-col gap-3">
                     {/* Loading Animation */}
@@ -109,10 +110,8 @@ function Main() {
             />
 
             <div className="flex items-center gap-2">
-              <RiImageAddLine className="w-8 h-6 cursor-pointer" />
-              <FaMicrophone className="w-8 h-6 cursor-pointer" />
               <VscSend
-                className="w-8 h-6 cursor-pointer"
+                className="w-10 h-8 cursor-pointer"
                 onClick={() => onSent()}
               />
             </div>
