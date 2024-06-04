@@ -27,7 +27,7 @@ function Main() {
       <div className="nav flex items-center justify-between text-2xl p-5 text-[#585858]">
         <p>Dhi-An Intellect</p>
         <img
-          src="src/assets/dhi-high-resolution-logo-transparent.png"
+          src="public/dhi-high-resolution-logo-transparent.png"
           alt="MainLogo"
           height={150}
           width={150}
@@ -83,7 +83,7 @@ function Main() {
             </div>
 
             <div className="result-data flex items-start gap-5">
-                <img src='src/assets/Logo2.png' alt="Logo2" width={30}/>
+                <img src='public/Logo2.png' alt="Logo" width={30}/>
                 {loading
                 ?<div className="loader w-[100%] flex flex-col gap-3">
                     {/* Loading Animation */}
