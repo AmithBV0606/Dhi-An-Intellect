@@ -28,7 +28,7 @@ function Main() {
         <p>Dhi-An Intellect</p>
         <img
           src="src/assets/dhi-high-resolution-logo-transparent.png"
-          alt=""
+          alt="MainLogo"
           height={150}
           width={150}
           className="rounded-3xl w-28"
@@ -83,7 +83,7 @@ function Main() {
             </div>
 
             <div className="result-data flex items-start gap-5">
-                <img src='' alt="src/assets/Logo2.png" width={30}/>
+                <img src='src/assets/Logo2.png' alt="Logo2" width={30}/>
                 {loading
                 ?<div className="loader w-[100%] flex flex-col gap-3">
                     {/* Loading Animation */}
